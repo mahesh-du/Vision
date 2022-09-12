@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:vision/Screens/Screen_Splash.dart';
 import 'Constants/Themes.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Vision",
       theme: THEME_one.data,
-      home: null,
+      home: Screen_Splash(),
     );
   }
 }
-
